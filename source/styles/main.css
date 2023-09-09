@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.board {
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 350px;
+    padding-top: 30px;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#todo-form {
+    padding: 33px 33px 0;
+}
+
+#todo-form input {
+    padding: 12px;
+    margin-right: 12px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    outline: none;
+    background: #2f4f4f;
+}
+
+#todo-form button {
+    padding: 12px 32px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: #2f4f4f;
+    color: #cecece;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#todo-form button:hover {
+    border: 1px solid #000;
+    color: #fff;
+    transition: .5s;
+}
+
+.lanes {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 30px 30px;
+    overflow: scroll;
+    height: 100%;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    color: #cecece;
+}
+
+.swim-lane {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #2f4f4f;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    border-radius: 10px;
+    width: 225px;
+    min-height: 120px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.task {
+    background: #cecece;
+    color: black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 13px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: move;
+}
+
+.is-dragging {
+    scale: 1.04;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: rgb(53, 70, 53);
+    color: white;
+}

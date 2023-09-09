@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/styles/main.css">
+    <title>TO DO</title>
+</head>
+<body>
+    <div class="board">
+        <form id="todo-form">
+            <input type="text" placeholder="Nova tarefa..." id="todo-input" />
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <div class="lanes">
+            <div class="swim-lane" id="todo-lane">
+            <h3 class="heading">PARA FAZER</h3>
+            <p class="task" draggable="true">Passar no supermercado</p>
+            <p class="task" draggable="true">Passar na farmacia</p>
+            <p class="task" draggable="true">Academia às 18:00 horas</p>
+            </div>
+
+            <div class="swim-lane">
+            <h3 class="heading">FAZENDO</h3>
+            <p class="task" draggable="true">Projeto 2</p>
+            </div>
+
+            <div class="swim-lane">
+            <h3 class="heading">CONCLUÍDO</h3>
+            <p class="task" draggable="true">Projeto 1</p>
+            </div>
+        </div>
+        </div>
+        <script src="./source/scripts/main.js"></script>
+</body>
+</html>
