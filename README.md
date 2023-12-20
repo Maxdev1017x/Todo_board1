@@ -16,6 +16,13 @@ Este é um projeto de quadro de tarefas (To Do Board) onde você pode adicionar 
 6. Solte o botão do mouse para fixar a tarefa neste quadro.
 7. Quando você concluir a tarefa, siga os passos anteriores e arraste a tarefa para o quadro "CONCLUÍDO".
 
+## Tecnologias usadas
+
+1. HTML
+2. CSS
+3. JAVASCRIPT
+
+
 ## Instalação
 
 #
